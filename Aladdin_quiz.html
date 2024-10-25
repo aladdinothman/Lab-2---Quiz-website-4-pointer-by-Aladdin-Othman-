@@ -11,7 +11,7 @@
         <h1> Quiz time- Some facts about Sweden</h1>
     </header>
 <main>
-<form id="quizForm"
+<form id="quizForm">
 <h2> Enter your contact information</h2>
 <label for="firstname"> First Name (Required): </label>
 <input type="text" id="firstname" name="firstName" required pattern=" [a-zA-Z] +" 
@@ -19,11 +19,74 @@
 <span class="error" id="firstNameError"></span>
 
 <label for=" lastName"> Last Name (Required): </label>
-<input type="text">
+<input type="text" id="lastname" name="lastName" required pattern=" [a-zA-Z] +" 
+ title="Last name must contain only letters." >
+<span class="error" id="lastNameError"></span>
+
+<label for="email"> Email (Required): </label>
+<input type="email"> id= "email" name="email" required title="Please enter a valid email adress." 
+<span class="error" id="emailError"></span>
+
+<h2> The quiz questions about Sweden </h2>
+
+<!-- Question 1: The capital of Sweden --> 
+
+<label for="question1">1.What is the capital of Sweden? * </label><br>
+<input type="radio" name="question1" value="Stockholm" required> Stockholm<br>
+<input type="radio" name="question1" value="Gothenburg"> Gothenburg<br>
+<input type="radio" name="question1" value="Helsingborg"> Helsingborg <br> 
+<span class="error" id="question1Error"></span> <br> 
+
+<!-- Question 2: Swedish cities --> 
+
+<label for="question2"> 2.Select all the Swedish cities (Required): *</label> <br>
+<input type="checkbox" name="question2" value="Uppsala"> Uppsala<br> 
+<input type="checkbox" name="question2" value="Copenhagen"> Copenhagen<br> 
+<input type="checkbox" name="question2" value="Ystad"> Ystad<br> 
+<span class="error" id="question2Error"> </span> <br>
+
+<!-- Question 3: An open question where the user can give his own answer -->
+
+<label for="question3"> 3.Describe in ypur owns words the signifiance of the Swedish fika tradition: </label> <br>
+<textarea name="question3" id="question3"></textarea> <br>
+
+
+<!-- Question 4: Which year did Sweden become a part of the EU ? -->
+
+<label for="question4"> 4.Which year did Sweden become part of the EU? * </label> <br>
+<input type="radio" name="question4" value="1995" required> 1995 <br>
+<input type="radio" name="question4" value="2002"> 2002 <br>
+<input type="radio" name="question4" value="1987" required> 1987 <br>
+<span class="error" id="question4Error"></span>
+
+
+<!-- Question 5: A famous swedish dish -->
+
+<label for="question5">5.Choose a famous Swedish from the list below:</label>
+<select name:"question5" id="question5">
+<option value= "Meatballs"> Meatballs </option>
+<option value= "Lasagna">  Lasagna </option>
+<option value= "Pizza"> Pizza </option>
+</select> <br>
+
+
+<!-- Question 6: The official language in Sweden -->
+
+<label for="question6">        </label>
+
+
+
+
+
+
+
+
+
+
 
 
 <label>            </label>
-
+</form>
 </main>
 
 </body>
