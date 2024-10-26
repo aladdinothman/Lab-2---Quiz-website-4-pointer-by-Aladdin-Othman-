@@ -15,3 +15,34 @@ header {
 
 }
 
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px; 
+}
+
+main {
+    max-width: 700px; 
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+    color: #0277bd;
+    margin-bottom: 20px;
+    font-size: 1,8rem;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #01579b;
+    font-weight: bold;
+}
+
+
+
