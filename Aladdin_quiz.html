@@ -24,7 +24,7 @@
 <span class="error" id="lastNameError"></span>
 
 <label for="email"> Email (Required): </label>
-<input type="email"> id= "email" name="email" required title="Please enter a valid email adress." 
+<input type="email id="email" name="email" required title="Please enter a valid email adress.">
 <span class="error" id="emailError"></span>
 
 <h2> The quiz questions about Sweden </h2>
@@ -47,7 +47,7 @@
 
 <!-- Question 3: An open question where the user can give his own answer -->
 
-<label for="question3"> 3.Describe in ypur owns words the signifiance of the Swedish fika tradition: </label> <br>
+<label for="question3"> 3.Describe in your own words the signifiance of the Swedish fika tradition: </label> <br>
 <textarea name="question3" id="question3"></textarea> <br>
 
 
@@ -62,7 +62,7 @@
 
 <!-- Question 5: A famous swedish dish -->
 
-<label for="question5">5.Choose a famous Swedish from the list below:</label>
+<label for="question5">5.Choose a famous Swedish dish from the list below:</label>
 <select name:"question5" id="question5">
 <option value= "Meatballs"> Meatballs </option>
 <option value= "Lasagna">  Lasagna </option>
@@ -81,21 +81,40 @@
 
 <!-- Question 7: Swedish furnitiure company -->
 
+<label for="question7"> 7. Which Swedish Company is known for selling furnitiure ? *</label> <br>
+<input type="radio" name="question7" value="IKEA" required> IKEA <br>
+<input type="radio" name="question7" value="Lindex"> Lindex <br>
+<input type="radio" name="question7" value="Byggmax"> Byggmax <br>
+<span class="error" id="question7Error"></span><br>
 
 
+<!-- Question 8: The swedish population -->
+
+<label for="question8"> 8. If you were to give an approximate answer to how large Sweden's population is, what would it be ? *</label> <br>
+<input type="radio" name="question8" value="10 million" required> 10 milion <br>
+<input type="radio" name="question8" value="32 million"> 32 milion <br>
+<input type="radio" name="question8" value="25 million"> 25 milion <br>
+<span class="error" id="question8Error"></span><br>
 
 
+<!-- Question 7: Swedens highest mountain -->
+
+<label for="question9"> 9. What is the name of Swedens highest mountain ? *</label>
+<input type="radio" name="question9" value="Kebnekaise" required > Kebnekaise <br>
+<input type="radio" name="question9" value="Matterhorn" > Matterhorn <br>
+<input type="radio" name="question9" value="Mount Everest"> Mount Everest <br>
+<span class="error" id="question9Error"></span><br>
 
 
+<!-- The code below is for the function where the user can submit his or hers quiz answers-->
 
-
-
-
-
-<label>            </label>
+<input type="submit" value="Submit">
 </form>
+
+<div id="result"></div>
 </main>
 
+<script src="Aladdin_quiz.js"></script>
 </body>
 
 </html>
