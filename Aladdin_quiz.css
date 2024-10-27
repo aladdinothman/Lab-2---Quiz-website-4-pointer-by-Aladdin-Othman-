@@ -44,5 +44,47 @@ label {
     font-weight: bold;
 }
 
+input, select, textarea {
+    width: 100% ;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3 ease, box-shadow 0.3 ease ;
+}
 
+input:focus, select:focus, textarea:focus {
+    border-color: #0277bd;
+    box-shadow: 0 0 5px rgba(2, 119, 189, 0.7 );
+}
 
+input [type="submit"] {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3 ease ;
+}
+
+input [type="submit"]:hover {
+    background-color: #01579b;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+#result h2 {
+    color: #0277bd;
+    font-size: 1.8rem;
+}
+
+#result ul {
+    list-style-type: none;
+    padding: 0;
+}
