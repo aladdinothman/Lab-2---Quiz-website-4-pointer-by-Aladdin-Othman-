@@ -42,3 +42,14 @@ if (!isValid) {
     return;
 }
 
+const question1Answer= document.querySelector('input[name="question1"]:checked'); 
+if (question1Answer && question1Answer.value === correctAnswers.question1) {
+    score++;
+}
+
+
+
+const question4Answer= document.querySelector('input[name="question4"]:checked'); 
+if (question1Answer && question4Answer.value === correctAnswers.question4) {
+    score++;
+}
