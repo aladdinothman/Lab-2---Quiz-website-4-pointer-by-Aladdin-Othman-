@@ -47,9 +47,19 @@ if (question1Answer && question1Answer.value === correctAnswers.question1) {
     score++;
 }
 
-
+const selectedCities=
+Array.from(document.query.selectorAL('Input[name="question2"]:checked')).map(el => el.value);
+if (arraysEqual(selectedCities, correctAnswers.question2)) {
+    scorre++;
+}
 
 const question4Answer= document.querySelector('input[name="question4"]:checked'); 
 if (question1Answer && question4Answer.value === correctAnswers.question4) {
     score++;
 }
+
+const question6Answer= document.querySelector('input[name="question6"]:checked'); 
+if (question6Answer && question6Answer.value === correctAnswers.question6) {
+    score++;
+}
+
