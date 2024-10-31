@@ -54,12 +54,27 @@ if (arraysEqual(selectedCities, correctAnswers.question2)) {
 }
 
 const question4Answer= document.querySelector('input[name="question4"]:checked'); 
-if (question1Answer && question4Answer.value === correctAnswers.question4) {
+if (question4Answer && question4Answer.value === correctAnswers.question4) {
     score++;
 }
 
 const question6Answer= document.querySelector('input[name="question6"]:checked'); 
 if (question6Answer && question6Answer.value === correctAnswers.question6) {
     score++;
+}
+
+const question7Answer=document.querySelector('input[name="question7"]:checked');
+if (question7Answer && question7Answer.value === correctAnswers.question7) {
+    scorre++;
+}
+
+const question8answer= document.querySelector('input[name="question8"]:checked');
+if (question8Answer && question8Answer.value === correctAnswers.question8) {
+    scorre++; 
+}
+
+const question9Answer=document.querySelector('Input[name="question9"]:checked'); 
+if (question9Answer && question9Answer.value === correctAnswers.question9) {
+    scorre++;
 }
 
