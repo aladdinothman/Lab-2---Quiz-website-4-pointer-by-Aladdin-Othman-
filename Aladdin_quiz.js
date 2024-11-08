@@ -11,6 +11,7 @@ let correctAnswers= {
     question1: 'Stockholm',
     question2: ['Uppsala', 'Ystad'],
     question4: '1995',
+    question5: 'Meatballs', 
     question6: 'Swedish',
     question7: 'IKEA',
     question8: '10.Million',
@@ -58,6 +59,11 @@ if (question4Answer && question4Answer.value === correctAnswers.question4) {
     score++;
 }
 
+const question5Answer= document.getElementById('question5').value;
+if (question5Answer === correctAnswers.question5) {
+    score++;
+}
+
 const question6Answer= document.querySelector('input[name="question6"]:checked'); 
 if (question6Answer && question6Answer.value === correctAnswers.question6) {
     score++;
@@ -81,12 +87,13 @@ if (question9Answer && question9Answer.value === correctAnswers.question9) {
 document.getElementById('result').innerHTML = `
 <div>
 <h2>Results of the Quiz</h2>
-<p>${firstName} ${lastName}, your score is: ${score}/7</p> 
+<p>${firstName} ${lastName}, your score is: ${score}/8</p> 
 <p>Correct Answers</p>
 <ul>
     <li>1. Capital of Sweden: ${correctAnswers.question1}</li>
     <li>2. Swedish cities: ${correctAnswers.question2.join(', ')}</li>
     <li>4. Sweden joined EU in: ${correctAnswers.question4}</li>
+    <li>5. An famous swedish dish: ${correctAnswers.question5} </li>
     <li>6. The official language of Sweden: ${correctAnswers.question6}</li>
     <li>7. Swedish furniture company: ${correctAnswers.question7} </li>
     <li>8. The population of Sweden: ${correctAnswers.question8} </li>
